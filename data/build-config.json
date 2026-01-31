@@ -1,0 +1,5 @@
+{
+  "dataImportReport": true,
+  "distanceBetweenElevationSamples": 20.0,
+  "writeCachedElevations": true
+}

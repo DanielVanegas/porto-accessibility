@@ -1,0 +1,26 @@
+services:
+  otp-build:
+    image: opentripplanner/opentripplanner:2.8.1
+    container_name: otp-build
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx8g"
+    volumes:
+      - ./data:/var/opentripplanner
+    command: >
+      --build --save
+    profiles:
+      - build
+
+  otp-serve:
+    image: opentripplanner/opentripplanner:2.8.1
+    container_name: otp-serve
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx4g"
+    volumes:
+      - ./data:/var/opentripplanner
+    ports:
+      - "8080:8080"
+    command: >
+      --load --serve
+    profiles:
+      - serve

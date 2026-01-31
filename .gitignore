@@ -1,0 +1,31 @@
+# Graph
+data/graph.obj
+
+# Large raw datasets
+data/*.pbf
+data/*.zip
+data/*.tif
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+data/report/
+
+# OTP caches and temp
+data/cache/
+data/otp-cache/
+data/*.obj
+data/*.tmp
+
+# Env files
+.env
+.env.*
