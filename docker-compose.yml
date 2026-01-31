@@ -24,3 +24,22 @@ services:
       --load --serve
     profiles:
       - serve
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyter
+    container_name: jupyter
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - ./data:/data
+      - ./results:/results
+    ports:
+      - "8888:8888"
+    profiles:
+      - serve
+    command: >
+      start-notebook.sh
+      --ServerApp.token=''
+      --ServerApp.password=''
+ 
