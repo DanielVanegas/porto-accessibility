@@ -34,6 +34,7 @@ services:
       - ./notebooks:/home/jovyan/work
       - ./data:/data
       - ./results:/results
+      - ./src:/home/jovyan/work/src
     ports:
       - "8888:8888"
     profiles:
