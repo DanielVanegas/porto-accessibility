@@ -5,6 +5,7 @@ data/graph.obj
 data/*.pbf
 data/*.zip
 data/*.tif
+data/amp.json
 
 # Python / Jupyter
 __pycache__/
