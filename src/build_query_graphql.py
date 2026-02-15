@@ -11,6 +11,13 @@ def build_query(mode):
               speed: 1.2
               reluctance: 2.0
             }}
+            bicycle: {{
+              speed: 4.5
+              reluctance: 1.0
+              optimization: {{
+                type: FLAT_STREETS
+              }}
+            }}
           }}
         }}
         """
