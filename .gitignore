@@ -31,3 +31,6 @@ data/*.tmp
 # Env files
 .env
 .env.*
+
+# Large results
+results/*.gpkg
